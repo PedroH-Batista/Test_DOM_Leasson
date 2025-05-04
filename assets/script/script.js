@@ -1,5 +1,5 @@
 const img = document.querySelector(".img");
-const img2 = document.querySelector(".imgT");
+const img2 = document.querySelector(".img2");
 const h1 = document.querySelector("#h1");
 const btn = document.querySelector("#btn");
 
