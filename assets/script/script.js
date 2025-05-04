@@ -1,22 +1,24 @@
 const img = document.querySelector(".img");
+const img2 = document.querySelector(".imgT");
 const h1 = document.querySelector("#h1");
 const btn = document.querySelector("#btn");
 
 img.setAttribute(
   "src",
-  "https://ofuxico.com.br/wp-content/uploads/2022/07/ronaldinho-gaucho-bens-bloqueados.jpg"
+  "https://thumbs.dreamstime.com/b/ola-palavra-portuguesa-hello-escrita-%C3%A0-m%C3%A3o-sobre-fundo-branco-171059799.jpg"
 );
-img.setAttribute("alt", "FOTO DO GOAT");
-h1.innerHTML = "Testes com Dom";
+img.setAttribute("alt", "Texto de Apresentação");
+
+h1.innerHTML = "Testes com DOM";
 btn.innerHTML = "CLICA AQUI";
-const retornoGoat = localStorage.getItem("imgGoat");
+const retornoGoat = localStorage.getItem("imgAP");
 img.classList.toggle(retornoGoat);
 
 btn.addEventListener("click", () => {
   img.classList.toggle("img2");
   if (retornoGoat) {
-    localStorage.removeItem("imgGoat");
+    localStorage.removeItem("imgAP");
   } else {
-    localStorage.setItem("imgGoat", "img2");
+    localStorage.setItem("imgAP", "img2");
   }
 });
