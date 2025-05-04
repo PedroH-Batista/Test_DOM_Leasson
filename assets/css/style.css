@@ -1,0 +1,19 @@
+#h1{
+    color: brown;
+    margin: auto;
+
+}
+
+.img{
+    border: solid 6px blue;
+}
+
+#btn{
+    margin: auto;
+    padding: 1px 2px 1px 2px;
+
+}
+
+.img2{
+    border: solid 6px green;
+}
